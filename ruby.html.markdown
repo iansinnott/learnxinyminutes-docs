@@ -14,6 +14,24 @@ contributors:
 
 ---
 
+### Updates
+
+New additions to this document will be shown here at the top. See the original
+docs bellow under "Original Docs".
+
+```ruby
+
+# If you have code that should only be run if the file was executed as a binary,
+and not if the file was required or otherwise used indirectly, you can use the
+following:
+if __FILE__ == $0
+  puts 'This file was run as a binary.'
+end
+
+```
+
+### Original Docs
+
 ```ruby
 # This is a comment
 
