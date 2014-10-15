@@ -127,7 +127,7 @@ echo "There are $(ls | wc -l) items here."
 echo "There are `ls | wc -l` items here."
 
 # Bash uses a case statement that works similarly to switch in Java and C++:
-case "$VARIABLE" in 
+case "$VARIABLE" in
     #List patterns for the conditions you want to meet
     0) echo "There is a zero.";;
     1) echo "There is a one.";;
