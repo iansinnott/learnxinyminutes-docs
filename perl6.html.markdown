@@ -1149,7 +1149,7 @@ my @list = 1, 3, 9 ... * > 30; # you can use a predicate
                                # (with the Whatever Star, here).
 my @list = 1, 3, 9 ... { $_ > 30 }; # (equivalent to the above)
 
-my @fib = 1, 1, *+* ... *; # lazy infinite list of prime numbers,
+my @fib = 1, 1, *+* ... *; # lazy infinite list of fibonacci series,
                            #  computed using a closure!
 my @fib = 1, 1, -> $a, $b { $a + $b } ... *; # (equivalent to the above)
 my @fib = 1, 1, { $^a + $^b } ... *; #(... also equivalent to the above)
@@ -1177,7 +1177,7 @@ $obj eqv $obj2; # sort comparison using eqv semantics
 
 ## * Short-circuit default operator
 # Like `or` and `||`, but instead returns the first *defined* value :
-say Any // Nil // 0 // 5; #=> 5
+say Any // Nil // 0 // 5; #=> 0
 
 ## * Short-circuit exclusive or (XOR)
 # Returns `True` if one (and only one) of its arguments is true
